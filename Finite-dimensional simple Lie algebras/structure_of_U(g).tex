@@ -1,0 +1,22 @@
+\section{Structure of \texorpdfstring{$\rmU(\g)$}{}}
+    \subsection{Conjugacy of Cartan subalgebras over a field of arbitrary characteristic}
+        \begin{convention}
+            In this subsection, $k$ will be an arbitrary infinite field. This is so that, if $\g$ is a finite-dimensional Lie algebra over $k$, then the subspaces $\g^0(x) := \{ y \in \g \mid \exists n \gg 0: \ad_{\g}(x)^n \cdot y = 0 \}$ will be Lie subalgebras of $\g$; these shall be referred to as \textbf{Engel subalgebras} of $\g$.
+        \end{convention}
+
+        Let $A := k[x_1, ..., x_n]$ be endowed with the usual $\N$-grading $A := \bigoplus_{d \geq 0} A_d$, wherein $A_d$ is spanned by all monomials of the form $x_1^{d_1} ... x_n^{d_n}$ such that $\sum_{i = 1}^n d_i = d$, i.e. monomials of total degree $n$. In general, we have a bijection:
+            $$\Mor_{\Sch_{/k}}(\Spec k, \Spec A) \cong \Mor_{k\-\Comm\Alg}(A, k)$$
+        If we then identify
+            $$A \cong \Sym_k(V^*)$$
+        wherein $V := \bigoplus_{i = 1}^n kx_i$, then we will see that each $k$-algebra homomorphism $A \to k$ is completely determined\footnote{We then extend to higher degrees via the universal property of symmetric algebras, which itself comes from the fact that $\Sym_k: k\mod \to k\-\Comm\Alg$ is left-adjoint to the forgetful functor $\oblv: k\-\Comm\Alg \to k\mod$. In more concrete terms, all we are saying is that values algebra homomorphisms $A \to k$ are determined on where the generators $x_i \in A$ get sent.} on the degree-$1$ graded component $A_1 \cong V$, i.e. by linear functionals $V \to k$. Thus, we in fact have:
+            $$\Mor_{\Sch_{/k}}(\Spec k, \Spec A) \cong \Mor_{k\-\Comm\Alg}(A, k) \cong \Hom_k(V, k) \cong V^*$$
+        i.e. $V^*$ is naturally identified with the space of $k$-points of $\Spec A$. In the literature, because $k$ is usually taken to be algebraically closed, the Hilbert \textit{Nullstellensatz} would apply, giving us a bijection:
+            $$\Spm A \cong V^*$$
+        identifying the set of \textit{closed} points of $\Spec A$ with $V^*$. In general, the \textit{Nullstellensatz} does not apply due to the existence of closed points of $\Spec A$ whose residue fields are (finite) extensions of $k$ (such extensions are trivial when $k = k^{\alg}$), but we still have:
+            $$\Spm A \supseteq V^*$$
+        This allows us to endow $V^*$ with the Zariski topology inherited from $\Spec A$ via $\Spm A$.
+
+        Let us now suppose that $n := \dim_k \g$ and then pick a basis $\{x_i\}_{1 \leq i \leq n}$. Additionally, let $V := \g$.
+
+    \subsection{The Harish-Chandra realisation of the centre}
+        
